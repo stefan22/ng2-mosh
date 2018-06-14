@@ -1,4 +1,4 @@
-## dependencies
+## new dependencies
 
 ### systemjs
 This is the module loader we use in our application. With a module loader, we no longer have to add tens or hundreds 
