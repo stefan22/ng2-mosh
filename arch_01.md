@@ -60,16 +60,15 @@
 
 2. service
 
-When our components need to communicate with back-end API's we use services
-We use services for any logic not related to view.
-
-- a plain class that encapsulates any non user interface logic
+- When our components need to communicate with back-end API's we use services
+- We use services for any logic not related to view.
+- a service is just a plain class that encapsulates any non user interface logic
 	+ http calls
 	+ logins
 
 3. router
 - purely responsible for navigation
-- as the user navigates from one page to another, base on changes on url figures out what
+- as the user navigates from one page to another, based on url changes, it figures out what
   component to present to the user.
 
 4. directives
@@ -79,12 +78,13 @@ We use services for any logic not related to view.
 - we often use them to add/extend behaviour or modify dom elements
 
 ```	ex:
-			we can use a directive to automatically grow input box on user focus
 
-			<input type='text' autoGrow />
+	we can use a directive to automatically grow input box on user focus
 
-			//there are angular built-in directives for removing/moving dom elements, adding/removing
-			//classes, repeat, styles and also creating your own custom directives
+	<input type='text' autoGrow />
+
+	//there are angular built-in directives for removing/moving dom elements, adding/removing
+	//classes, repeat, styles and also creating your own custom directives
 
 
 ```
