@@ -41,7 +41,7 @@
 ![](images/multiple-components.png)
 
 
-- in javascript/jquery, you get a reference to a dom element in order to modify or handle its events
+> in javascript/jquery, you get a reference to a dom element in order to modify or handle its events
 
 
 ```
