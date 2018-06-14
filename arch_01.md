@@ -50,7 +50,7 @@
 ```
 
 
-#### binding
+#### the same in angular2 is done through binding
 
 - in angular we use binding. In the View, we bind to the methods and properties of our components.
 - if there's a change on the value of a property, the dom element bound to this property will 
