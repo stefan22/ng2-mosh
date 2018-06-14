@@ -50,13 +50,16 @@
 ```
 
 
-#### the same in angular2 is done through binding
++ the same in angular2 is done through binding
 
-- in angular we use binding. In the View, we bind to the methods and properties of our components.
-- if there's a change on the value of a property, the dom element bound to this property will 
-  refresh automatically.
-- So there's no need to get a reference of that element in order to update it.
-- Similarly, to handle a dom event like a click, we bind that event to a method on our component.
+  - in angular we use binding. In the View, we bind to the methods and properties of our components.
+  - if there's a change on the value of a property, the dom element bound to this property will 
+    refresh automatically.
+  - So there's no need to get a reference of that element in order to update it.
+  - Similarly, to handle a dom event like a click, we bind that event to a method on our component.
+
+
+
 
 2. service
 
