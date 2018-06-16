@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+        "**/node_modules": true,
+        "typings": true,
+        "**/*.map": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    },
+}

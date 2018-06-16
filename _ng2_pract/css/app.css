@@ -1,0 +1,18 @@
+app {
+  border:1px solid rosybrown;
+  display: block;
+  padding: 1em;
+}
+
+app h1 {
+  text-align: center;
+}
+
+books,authors {
+  display: block;
+  padding:1em;
+  margin-bottom:1em;
+  background: #EFEBE9;
+  border-radius: 4px;
+  border-bottom: 1px dotted gray;
+}
