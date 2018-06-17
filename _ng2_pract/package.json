@@ -1,6 +1,6 @@
 {
   "name": "ng2-mosh",
-  
+
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" "
   },

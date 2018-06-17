@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser', '@angular/forms', './app.component', './books/books.component', './authors/authors.component'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', '@angular/forms', '@angular/http', './app.component', './books/books.component', './authors/authors.component', './autogrow.directive'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_1, forms_1, app_component_1, books_component_1, authors_component_1;
+    var core_1, platform_browser_1, forms_1, http_1, app_component_1, books_component_1, authors_component_1, autogrow_directive_1;
     var AppModule;
     return {
         setters:[
@@ -23,6 +23,9 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
             function (forms_1_1) {
                 forms_1 = forms_1_1;
             },
+            function (http_1_1) {
+                http_1 = http_1_1;
+            },
             function (app_component_1_1) {
                 app_component_1 = app_component_1_1;
             },
@@ -31,6 +34,9 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
             },
             function (authors_component_1_1) {
                 authors_component_1 = authors_component_1_1;
+            },
+            function (autogrow_directive_1_1) {
+                autogrow_directive_1 = autogrow_directive_1_1;
             }],
         execute: function() {
             AppModule = class AppModule {
@@ -38,10 +44,10 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
             AppModule = __decorate([
                 core_1.NgModule({
                     imports: [
-                        platform_browser_1.BrowserModule, forms_1.FormsModule
+                        platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, http_1.JsonpModule
                     ],
                     declarations: [
-                        app_component_1.AppComponent, books_component_1.BooksComponent, authors_component_1.AuthorsComponent
+                        app_component_1.AppComponent, books_component_1.BooksComponent, authors_component_1.AuthorsComponent, autogrow_directive_1.AutogrowDirective
                     ],
                     bootstrap: [
                         app_component_1.AppComponent

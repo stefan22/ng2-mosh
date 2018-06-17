@@ -1,4 +1,4 @@
-System.register(['@angular/core'], function(exports_1, context_1) {
+System.register(['@angular/core', './http.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,28 @@ System.register(['@angular/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, http_service_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (http_service_1_1) {
+                http_service_1 = http_service_1_1;
             }],
         execute: function() {
             AppComponent = class AppComponent {
+                constructor(httpService) {
+                    this.httpService = httpService;
+                    this.dataLink = "dummy data";
+                    this.isActive = false;
+                    this.httpService.getPosts()
+                        .subscribe(posts => console.log(posts));
+                }
+                onClick(e) {
+                    console.log(e);
+                }
             };
             AppComponent = __decorate([
                 core_1.Component({
@@ -27,10 +40,19 @@ System.register(['@angular/core'], function(exports_1, context_1) {
       <h1>Yello Library</h1>
       <books></books>
       <authors></authors>
+
+      <button class="btn btn-add" [class.active]="isActive"
+      [style.color]="isActive ? 'green' : 'white'">Add</button>
+
+      <button (click)="onClick($event)" class="btn btn-add"> Event </button>
+      <section class="data">
+      <p><a href="data.html">{{ dataLink }}</a></p>
+      </section>
   `,
+                    providers: [http_service_1.HttpService],
                     styleUrls: ["../css/app.css"]
                 }), 
-                __metadata('design:paramtypes', [])
+                __metadata('design:paramtypes', [http_service_1.HttpService])
             ], AppComponent);
             exports_1("AppComponent", AppComponent);
         }
