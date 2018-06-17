@@ -1,57 +1,140 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
 
 /* --------------- */
+
+
 /* page.css Styles */
+
+
 /* --------------- */
 
 html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
 
 html {
-  line-height: 1; }
+    line-height: 1;
+}
 
-ol, ul {
-  list-style: none; }
+ol,
+ul {
+    list-style: none;
+}
 
 a img {
-  border: none; }
+    border: none;
+}
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 
 /* Base Styles */
 
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .cf:after {
@@ -59,61 +142,65 @@ a img {
 }
 
 html {
-  background-color: #F7F7F7;
-  min-height: 100%;
-  height: auto;
+    background-color: #F7F7F7;
+    min-height: 100%;
+    height: auto;
 }
 
-body  {
-  font-family: 'Open Sans', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
-  line-height: 160%;
-  color: #555459;
-  line-height: 1.5rem;
+body {
+    font-family: 'Open Sans', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 160%;
+    color: #555459;
+    line-height: 1.5rem;
     *zoom: 1;
 }
 
 @media all and (max-width: 400px) {
-  main {
-    width: 100%;
-  }
+    main {
+        width: 100%;
+    }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
-  font-weight: 100;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: 100;
 }
 
-h1{
-  font-size: 2.4rem;
-  line-height: 100%;
-  margin-bottom: 10px;
-  padding-top: 10px;
-  font-family: inherit;
-  margin: 0 0 1rem;
+h1 {
+    font-size: 2.4rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-family: inherit;
+    margin: 0 0 1rem;
 }
 
-h2{
-  font-weight: 300;
-  font-size: 1.4rem;
-  line-height: 90%;
-  margin-bottom: 5px;
-  margin-top: 10px;
+h2 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 90%;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
-h3{
-  margin-top: 0;
-  font-size: 1rem;
-  line-height: 110%;
-  margin-bottom: 5px;
+h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    line-height: 110%;
+    margin-bottom: 5px;
 }
 
 a.small {
-  line-height: 100%;
-  font-size: .9rem;
+    line-height: 100%;
+    font-size: .9rem;
 }
-
 
 .btn {
     display: inline-block;
@@ -136,32 +223,31 @@ a.small {
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-         -o-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .btn:hover {
-  background: #DF7A47;
+    background: #DF7A47;
 }
 
 .card {
-  background: white;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 40px;
-  position: relative;
-  opacity: .95;
-  border-radius: 4px;
-  border: 1px solid #e8e8e8;
-  box-shadow: 0 1px 0 rgba(0,0,0,.25);
+    background: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 40px;
+    position: relative;
+    opacity: .95;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
 }
 
-
 .page {
-  padding: 1em;
-  margin-bottom: 1em;
-  background: #E0E0E0;
+    padding: 1em;
+    margin-bottom: 1em;
+    /* background: #E0E0E0; */
 }

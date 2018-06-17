@@ -26,10 +26,10 @@ System.register(['@angular/http', '@angular/core', 'rxjs/add/operator/map'], fun
                 constructor(http) {
                     this.http = http;
                     this.url = "http://jsonplaceholder.typicode.com/posts";
-                    this.http;
+                    this.url2 = "https://feedo.yznet.com/json?file=Player_Rank.xlsx";
                 }
                 getPosts() {
-                    return this.http.get(this.url)
+                    return this.http.get(this.url2)
                         .map(res => res.json());
                 } //getPosts method
                 createPost(post) {

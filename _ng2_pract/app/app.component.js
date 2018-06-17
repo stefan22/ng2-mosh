@@ -24,14 +24,23 @@ System.register(['@angular/core', './http.service'], function(exports_1, context
             AppComponent = class AppComponent {
                 constructor(httpService) {
                     this.httpService = httpService;
+                    this.isLoading = true;
                     this.dataLink = "dummy data";
                     this.isActive = false;
-                    this.httpService.getPosts()
-                        .subscribe(posts => console.log(posts));
-                }
+                } //constructor
                 onClick(e) {
                     console.log(e);
-                }
+                } //onClick method
+                ngOnInit() {
+                    this.httpService.getPosts()
+                        .subscribe(posts => {
+                        this.posts = posts;
+                        this.isLoading = false;
+                        console.log(posts);
+                        console.log(posts[0]);
+                        console.log(posts[0].Country_Desc);
+                    });
+                } //ngOnInit method
             };
             AppComponent = __decorate([
                 core_1.Component({
@@ -54,7 +63,7 @@ System.register(['@angular/core', './http.service'], function(exports_1, context
                 }), 
                 __metadata('design:paramtypes', [http_service_1.HttpService])
             ], AppComponent);
-            exports_1("AppComponent", AppComponent);
+            exports_1("AppComponent", AppComponent); //AppComponent class
         }
     }
 });
