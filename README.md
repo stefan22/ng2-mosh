@@ -9,10 +9,11 @@
 
 ### Class binding
 
-<li `[class.active]`="isActive" >          
+<img `[class.active]`="isActive" >          
 
 
 <hr>
+
 
 ### Style binding
 
