@@ -21,3 +21,18 @@
 
 <hr>
 
+### Event binding
+
+<button `(click)`="onClick($event)" >
+<button `on-click`="onClick($event)" >
+
+<hr>
+
+
+### Two-way binding
+
+<input type="text" `[(ngModel)]`="firstName" >
+<input type="text" `bindon-ngModel`="firstName" >
+
+<hr>
+
